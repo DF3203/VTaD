@@ -116,7 +116,7 @@ body a{
     color: #409dff;
 }
 
-section{
+.section{
     background-image: url("../img/star_background.jpg");
     background-position: center center;
     background-size: cover;
@@ -140,12 +140,12 @@ section{
 }
 
 .brand span{
-    color: aqua;
+    color: #409dff;
     transition: all .35s ease-in-out;
 }
 
 .brand:hover{
-    color: aqua;
+    color: #409dff;
 }
 
 .brand span:hover{
@@ -169,11 +169,11 @@ section{
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.02em;
-    color: aqua;
+    color: #409dff;
 }
 
 .nav__link:hover{
-    color: aqua;
+    color: #409dff;
 }
 
 .container__planet{
@@ -181,6 +181,40 @@ section{
     font-size: 20px;
     text-align: justify;
     align-items: center;
+}
+
+.footer__copyright{
+    text-align: center;
+}
+
+.footer{
+    background-image: url("../img/star_background.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.container__footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container__footer-item{
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.container__footer-list{
+
+    font-size: 16px;
+    list-style: none;
+}
+
+.container__footer-link{
+    color: white;
+}
+
+.container__footer-link:hover{
+    color: #409dff;
 }
 
 .nav__item{
