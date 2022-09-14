@@ -6,6 +6,11 @@
     margin: 0;
 }
 
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
 body{
     display: block;
     position: relative;
@@ -16,10 +21,120 @@ body{
     font-size: 14px;
 }
 
-html{
-    height: 100%;
-    scroll-behavior: smooth;
+body a{
+    text-decoration: none;
+    transition: all .35s ease-in-out;
 }
+
+.header{
+    padding: 20px 0;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__contact{
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+}
+
+.header__contact-list{
+    list-style: none;
+}
+
+
+.header__contact-link{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: white;
+}
+
+.header__contact-link:hover{
+    color: aqua;
+}
+
+.header__contact-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__contact-item:last-child{
+    margin: 0;
+}
+
+.nav{
+    font-size: 16px;
+    position: relative;
+}
+
+.nav__list{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+
+.nav__link{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #409dff;
+}
+
+.nav__link:hover{
+    color: #409dff;
+}
+
+.nav__item{
+    color: white;
+}
+
+.nav__item:hover{
+    color: #409dff;
+}
+
+.brand{
+    font-family: 'Railway', sans-serif;
+    color: white;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 31px;
+    text-decoration: none;
+}
+
+.brand span{
+    color: #409dff;
+    transition: all .35s ease-in-out;
+}
+
+.brand:hover{
+    color: #409dff;
+}
+
+.brand span:hover{
+    color: white;
+}
+
+.main{
+    background-image: url("../img/star_background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .banner{
     position: relative;
@@ -28,6 +143,17 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     padding: 115px;
+}
+
+
+.banner__title{
+    font-style: normal;
+    color: white;
+    font-size: 61px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 60px;
+    text-transform: uppercase;
 }
 
 .banner__description{
@@ -41,16 +167,6 @@ html{
     margin-top: 24px;
 }
 
-.banner__title{
-    font-style: normal;
-    color: white;
-    font-size: 61px;
-    font-weight: 900;
-    letter-spacing: 0.06em;
-    line-height: 60px;
-    text-transform: uppercase;
-}
-
 .banner__container{
     display: flex;
     flex-direction: row;
@@ -58,9 +174,8 @@ html{
     justify-content: space-between;
 }
 
-body a{
-    text-decoration: none;
-    transition: all .35s ease-in-out;
+.section {
+    padding: 115px;
 }
 
 .container{
@@ -116,64 +231,8 @@ body a{
     color: #409dff;
 }
 
-.section{
-    background-image: url("../img/star_background.jpg");
-    background-position: center center;
-    background-size: cover;
-    padding: 115px;
-}
-
 .container__planet-image{
     max-width: 400px;
-}
-
-
-.brand{
-    font-family: 'Railway', sans-serif;
-    color: white;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    line-height: 31px;
-    text-decoration: none;
-}
-
-.brand span{
-    color: #409dff;
-    transition: all .35s ease-in-out;
-}
-
-.brand:hover{
-    color: #409dff;
-}
-
-.brand span:hover{
-    color: white;
-}
-
-.nav{
-    font-size: 16px;
-    position: relative;
- }
-
-.nav__list{
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    list-style: none;
-}
-
-.nav__link{
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    color: #409dff;
-}
-
-.nav__link:hover{
-    color: #409dff;
 }
 
 .container__planet{
@@ -183,15 +242,17 @@ body a{
     align-items: center;
 }
 
+
+.footer{
+    background-image: url("../img/starless_background.png");
+    background-position: right;
+    background-size: cover;
+}
+
 .footer__copyright{
     text-align: center;
 }
 
-.footer{
-    background-image: url("../img/star_background.jpg");
-    background-position: center center;
-    background-size: cover;
-}
 .container__footer{
     display: flex;
     justify-content: space-evenly;
@@ -215,58 +276,4 @@ body a{
 
 .container__footer-link:hover{
     color: #409dff;
-}
-
-.nav__item{
-    color: white;
-}
-
-.nav__item:hover{
-    color: #409dff;
-}
-.header{
-    padding: 20px 0;
-}
-
-.header__container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.header__contact{
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 48px;
-}
-
-.header__contact-list{
-    list-style: none;
-}
-
-
-.header__contact-link{
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: white;
-}
-
-.header__contact-link:hover{
-    color: aqua;
-}
-
-.header__contact-item{
-    display: flex;
-    flex-direction: column;
-}
-
-.header__contact-item:last-child{
-    margin: 0;
 }
