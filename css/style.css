@@ -187,16 +187,16 @@ body a{
     margin-left: auto;
 }
 
-.container__menu{
+.menu{
     text-align: center;
 }
 
-.container__menu-caption{
+.menu__caption{
     font-size: 50px;
     margin-bottom: 24px;
 }
 
-.container__menu-list{
+.menu_list{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -205,7 +205,7 @@ body a{
 }
 
 
-.container__menu-item{
+.menu__item{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,23 +219,23 @@ body a{
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container__menu-item:hover{
+.menu__item:hover{
     transform: scale(1.15);
 }
 
-.container__menu-link{
+.menu__link{
     color: white;
 }
 
-.container__menu-link:hover{
+.menu__link:hover{
     color: #409dff;
 }
 
-.container__planet-image{
+.planet-info__image{
     max-width: 400px;
 }
 
-.container__planet{
+.planet-info{
     display: flex;
     font-size: 20px;
     text-align: justify;
@@ -253,27 +253,26 @@ body a{
     text-align: center;
 }
 
-.container__footer{
+.footer__container{
     display: flex;
     justify-content: space-evenly;
 }
 
-.container__footer-item{
+.footer__container-item{
     margin-top: 10px;
     display: flex;
     gap: 5px;
     align-items: center;
 }
-.container__footer-list{
-
+.footer__container-list{
     font-size: 16px;
     list-style: none;
 }
 
-.container__footer-link{
+.footer__container-link{
     color: white;
 }
 
-.container__footer-link:hover{
+.footer__container-link:hover{
     color: #409dff;
 }
