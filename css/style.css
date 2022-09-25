@@ -292,7 +292,7 @@
         align-items: center;
     }
 
-    form{
+    .review__form{
         background: #1e1e1e;
         box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
         border-radius: 5px;
@@ -301,15 +301,12 @@
         margin-right: auto;
         padding-top: 5px;
         padding-bottom: 5px;
-        left: 0;
-        right: 0;
         border-top: 5px solid #A840FF;
         animation: bounce 1.5s infinite;
     }
 
     .review__form-title{
         display: block;
-        font-family: sans-serif;
         margin: 10px auto 5px;
         width: 300px;
         font-size: 2em;
