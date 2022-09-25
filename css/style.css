@@ -320,28 +320,33 @@
         padding: 10px;
         border-radius: 2px;
         border: none;
-        transition: all 0.5s ease 0s;
     }
 
     .review__form-input{
+        transition: ease 0.5s;
         background-color: #ebebeb;
         height: 2em;
     }
 
     .review__form-input:hover{
         border-bottom: 5px solid #6F00CC;
-        height: 30px;
-        width: 380px;
-        transition: ease 0.5s;
+        transform: scale(1.2);
     }
 
     .review__form-text{
+        transition: ease 0.5s;
         background-color: #ebebeb;
         overflow: hidden;
         height: 10rem;
     }
 
+    .review__form-text:hover{
+        border-bottom: 5px solid #6F00CC;
+        transform: scale(1.2, 1.1);
+    }
+
     .review__form-button{
+        transition: 0.5s ease 0s;
         width: 200px;
         color: white;
         background-color: #6F00CC;
@@ -350,20 +355,22 @@
 
     .review__form-button:hover{
         box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
-        transform: translateY(-3px);
-        width: 300px;
+        transform: translateY(-3px) scale(1.1);
         border-top: 5px solid #A840FF;
         border-radius: 0;
     }
 
     @keyframes bounce {
-        0% {
-            transform: translate(0, 4px);
+        0%{
+            transform: translate(0,4px);
         }
         50% {
-            transform: translate(0, 8px);
+            transform: translate(0, 14px);
         }
-    }
+        100%{
+            transform: translate(0, 4px);
+        }
+}
 
 @media screen and (max-width: 1200px)
     {
