@@ -60,7 +60,7 @@
     }
 
     .header__contact-link:hover {
-        color: aqua;
+        color: #A840FF;
     }
 
     .header__contact-item {
@@ -96,11 +96,11 @@
         font-style: normal;
         font-weight: 500;
         letter-spacing: 0.02em;
-        color: #409dff;
+        color: #A840FF;
     }
 
     .nav__link:hover {
-        color: #409dff;
+        color: #A840FF;
     }
 
     .nav__item {
@@ -108,7 +108,7 @@
     }
 
     .nav__item:hover {
-        color: #409dff;
+        color: #A840FF;
     }
 
     .brand {
@@ -123,12 +123,12 @@
     }
 
     .brand span {
-        color: #409dff;
+        color: #A840FF;
         transition: all .35s ease-in-out;
     }
 
     .brand:hover {
-        color: #409dff;
+        color: #A840FF;
     }
 
     .brand span:hover {
@@ -278,7 +278,7 @@
     }
 
     .menu__link:hover {
-        color: #409dff;
+        color: #A840FF;
     }
 
     .planet-info__image {
@@ -292,7 +292,83 @@
         align-items: center;
     }
 
-    @media screen and (max-width: 1200px)
+    form{
+        background: #1e1e1e;
+        box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+        border-radius: 5px;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        left: 0;
+        right: 0;
+        border-top: 5px solid #A840FF;
+        animation: bounce 1.5s infinite;
+    }
+
+    .review__form-title{
+        display: block;
+        font-family: sans-serif;
+        margin: 10px auto 5px;
+        width: 300px;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .review__form-item{
+        display: block;
+        margin: 30px auto;
+        min-width: 300px;
+        padding: 10px;
+        border-radius: 2px;
+        border: none;
+        transition: all 0.5s ease 0s;
+    }
+
+    .review__form-input{
+        background-color: #ebebeb;
+        height: 2em;
+    }
+
+    .review__form-input:hover{
+        border-bottom: 5px solid #6F00CC;
+        height: 30px;
+        width: 380px;
+        transition: ease 0.5s;
+    }
+
+    .review__form-text{
+        background-color: #ebebeb;
+        overflow: hidden;
+        height: 10rem;
+    }
+
+    .review__form-button{
+        width: 200px;
+        color: white;
+        background-color: #6F00CC;
+        font-size: 20px;
+    }
+
+    .review__form-button:hover{
+        box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+        transform: translateY(-3px);
+        width: 300px;
+        border-top: 5px solid #A840FF;
+        border-radius: 0;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translate(0, 4px);
+        }
+        50% {
+            transform: translate(0, 8px);
+        }
+    }
+
+@media screen and (max-width: 1200px)
     {
         .planet-info{
             flex-direction: column;
@@ -340,5 +416,5 @@
     }
 
     .footer__container-link:hover {
-        color: #409dff;
+        color: #A840FF;
     }
