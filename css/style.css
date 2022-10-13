@@ -292,6 +292,34 @@
         align-items: center;
     }
 
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .close {
+        float: right;
+        margin-right: 30px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #A840FF;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
     .review__form{
         background: #1e1e1e;
         box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
@@ -361,6 +389,14 @@
         border-radius: 0;
     }
 
+    .invalid{
+        background-color: #f68d89;
+    }
+
+    .valid{
+        background-color: #6bad6e;
+    }
+
     @keyframes bounce {
         0%{
             transform: translate(0,4px);
@@ -379,6 +415,7 @@
             flex-direction: column;
         }
     }
+
 
 
     .footer {

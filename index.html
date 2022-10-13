@@ -181,15 +181,19 @@
     </section>
 
     <section class="section">
-      <div class="container review">
-        <form class="review__form">
-          <div class="review__form-title">Залишіть відгук</div>
-          <input type="text"  class="review__form-item review__form-input" placeholder="ім'я">
-          <input type="text"  class=" review__form-item review__form-input" placeholder="Ваша пошта">
-          <textarea class="review__form-item review__form-text" placeholder="Ваш відгук"></textarea>
-          <button onclick="alert('Дякуємо за відгук!')" class="review__form-item review__form-button">Відправити</button>
-        </form>
+      <div class="modal">
+        <div class="container review">
+          <form class="review__form">
+            <span class="close">&times;</span>
+            <div class="review__form-title">Залишіть відгук</div>
+            <input type="text" id="name" class="review__form-item review__form-input" placeholder="ім'я">
+            <input type="text" id="mail" class=" review__form-item review__form-input" placeholder="Ваша пошта">
+            <textarea id="review" class="review__form-item review__form-text" placeholder="Ваш відгук"></textarea>
+            <button type="button" class="review__form-item review__form-button">Відправити</button>
+          </form>
+        </div>
       </div>
+      <button id="ShowButton" class="review__form-item review__form-button">Залишити відгук</button>
     </section>
   </main>
 
@@ -209,5 +213,6 @@
       <span>&#169; Copyright 2022</span>
     </div>
   </footer>
+  <script src="js/index.js" type="module"></script>
 </body>
 </html>
