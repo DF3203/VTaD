@@ -14,12 +14,27 @@ showButton.addEventListener('click', function (e){
 closeButton.addEventListener('click', function (e){
     e.preventDefault();
     modal.style.display = "none";
+    clearInputs();
 })
 
 window.addEventListener('click', function (e){
-    if (e.target === modal)
+    if (e.target === modal) {
         modal.style.display = "none";
+        clearInputs();
+    }
 })
+
+const clearInputs = () => {
+    name.value = "";
+    mail.value = "";
+    review.value = "";
+    name.classList.remove('invalid');
+    mail.classList.remove('invalid');
+    review.classList.remove('invalid');
+    name.classList.remove('valid');
+    mail.classList.remove('valid');
+    review.classList.remove('valid');
+}
 
 const replaceClass = (item, oldClass, newClass) => {
     item.classList.remove(oldClass);
